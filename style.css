@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url("images/bg-mobile.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-family: "Open Sans", sans-serif;
+}
+
+.container {
+  padding: 0 50px;
+}
+
+.header {
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.header img {
+  width: 100%;
+  max-width: 60%;
+}
+
+.hero {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.hero-img img {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+h2 {
+  /* font-size: 2rem; */
+  font-size: clamp(2rem, 6vw, 3.5rem);
+  color: white;
+  margin-bottom: 30px;
+}
+
+span {
+  transition: 0.5s;
+}
+
+.build:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+.the:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+.community:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+.your:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+.fans:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+.will:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+.love:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+p {
+  color: whitesmoke;
+  font-size: 0.8rem;
+  margin-bottom: 30px;
+}
+
+button {
+  font-size: 0.8rem;
+  padding: 10px 70px;
+  border-radius: 50px;
+  border: none;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+  color: hsl(257, 40%, 49%);
+  transition: 0.5s;
+}
+
+button:hover {
+  background: hsl(300, 69%, 71%);
+  color: white;
+}
+
+footer {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+footer i {
+  color: white;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+footer i:hover {
+  color: hsl(300, 69%, 71%);
+}
+
+@media (min-width: 992px) {
+  body {
+    background-image: url("images/bg-desktop.svg");
+  }
+
+  .header {
+    height: 150px;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-img {
+    width: 80%;
+  }
+
+  .header img {
+    max-width: 100%;
+  }
+
+  .hero {
+    padding-top: 0px;
+    flex-direction: row;
+    align-items: start;
+    justify-content: center;
+    text-align: start;
+    gap: 30px;
+  }
+
+  .hero-img img {
+    flex: 1;
+    width: 100%;
+    min-width: 300px;
+    margin-bottom: 0px;
+  }
+
+  /* h2 {
+    font-size: 3.5rem;
+  } */
+
+  p {
+    color: whitesmoke;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  button {
+    font-size: 1.3rem;
+    padding: 20px 70px;
+  }
+
+  footer {
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 10px;
+  }
+}
